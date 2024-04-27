@@ -1,0 +1,146 @@
+* {
+    font-family: arial;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.mynav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    z-index: 1;
+    background: linear-gradient(rgb(255, 0, 100), rgb(170, 0, 0));
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.75s;
+}
+
+.mynav a {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: arial;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.mynav a:hover {
+    background-color: whitesmoke;
+    color: rgb(255, 0, 50);
+}
+
+#closebtn {
+    visibility: hidden;
+}
+
+.daytitle {
+    animation: fadeIn 1s;
+    width: 80%;
+    margin: auto;
+    margin-right: 30%;
+    background: linear-gradient(rgba(190, 135, 135, 0.684), rgba(108, 11, 11, 0.607));
+}
+
+.daytitle p {
+    font-size: 23px;
+    padding: 80px 0px;
+    border: 2px solid grey;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+header {
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/033/518/154/small/beautiful-nature-vintage-background-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 100%;
+    margin-top: 0;
+    position: static;
+    top: 0;
+    color: bisque;
+    border: 2px solid black;
+}
+
+header h1 {
+    padding: 15%;
+    text-align: center;
+    margin-right: 0;
+    margin-right: 10%;
+}
+
+.today {
+    width: 80%;
+    margin-top: 100px;
+}
+
+.today div {
+    text-align: center;
+    margin: 100px;
+    border: 2px solid black;
+    border-radius: 45px;
+}
+
+.today h1,
+.today p {
+    padding: 20px;
+    color: white;
+}
+
+#one,
+#three {
+    background: linear-gradient(rgb(89, 82, 75), rgb(202, 199, 189));
+}
+
+#two,
+#four {
+    background: linear-gradient(rgb(86, 145, 86), rgb(175, 204, 204));
+}
+
+@media only screen and (max-width: 600px) {
+    .mynav {
+        width: 100%;
+        height: 8%;
+        padding-top: 0px;
+        overflow-y: hidden;
+    }
+    .mynav a {
+        padding: 5px;
+        visibility: hidden;
+    }
+    #openBtn {
+        visibility: visible;
+    }
+    #closebtn {
+        visibility: hidden;
+    }
+    .daytitle {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    header h1 {
+        padding-top: 30%;
+    }
+    .today {
+        width: 100%;
+        overflow-y: hidden;
+    }
+    .today div {
+        margin: 10%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
